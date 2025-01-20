@@ -10,7 +10,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary:"#20212D",
+        secodary:"#333455",
+        secodaryS1:"#7173BB",
+        lightgray:"#F4F2FB",
+        skylight:"#F3F8FD"
       },
+      screens:{
+        tab:"1025px"
+      }
     },
   },
   plugins: [],

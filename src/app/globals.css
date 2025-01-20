@@ -1,21 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: black;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero-bg{
+  background-image: url("/assets/images/mainbg/main-bg.png");
+  border-radius: 16px;
+  background-size: cover;
+  height: 1025px;
+  width: 100%;
+ 
+}
+.line_frame_bg{
+  background-image: url("/assets/images/line_frame/line_frame.png");
+  background-size: cover;
+}
+
+.main-container{
+  max-width: 1509px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.inside-container{
+   max-width: 1450px;
+ 
+   margin: 0 auto;
+}
+.hollow-text {
+  text-shadow: -1px -1px 0px #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  color: white;
+}
+.card_title{
+  @apply text-[27px] leading-[37.8px] font-normal
+}
+.card_subtitle{
+  @apply text-lg leading-[28.8px] font-normal
 }
