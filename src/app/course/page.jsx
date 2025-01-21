@@ -107,7 +107,7 @@ const courseData = [
 ];
 function Course() {
   return (
-    <div className=" py-4 mt-8 max-w-[1632rem] mx-auto">
+    <div className=" py-4 mt-8 max-w-[1632px] mx-auto">
       {
         courseData.length > 0 ? (
          <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  grid-rows-3">
