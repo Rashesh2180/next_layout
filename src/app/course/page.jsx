@@ -110,11 +110,11 @@ function Course() {
     <div className=" py-4 mt-8 max-w-[1632px] mx-auto">
       {
         courseData.length > 0 ? (
-         <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  grid-rows-3">
+         <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  md:grid-rows-3">
           {courseData.map(ele=>(
               <div
               key={ele.id}
-              className={`${ele.desc  ? " col-span-2 row-span-2" : "lg:max-w-sm w-full "} px-6 py-8 rounded-2xl border border-[#19315D1A] !bg-[${ele.bg_color}] opacity-80`}
+              className={`${ele.desc  ? " md:col-span-2 md:row-span-2" : "lg:max-w-sm w-full "} px-6 py-8 rounded-2xl border border-[#19315D1A] !bg-[${ele.bg_color}] opacity-80`}
             >
               <div className={`flex justify-between   flex-wrap gap-5 items-center ${ele.desc ? " mb-20" : "mb-9"}`}>
                 <div className=" flex gap-3">
