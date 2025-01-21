@@ -8,7 +8,7 @@ const CourseBanner = () => {
         <h3 className=" text-5xl leading-[72px] tracking-[1px]  font-semibold text-center text-[#FEFEFF]">
           Kurs Übersicht
         </h3>
-        <p className="card_title text-center text-[#FEFEFF] mb-9 max-w-[40rem] mx-auto">
+        <p className="card_title text-center text-[#FEFEFF] mb-9 max-w-[40rem] mx-auto tracking-[-0.2px]">
           Egal ob Einsteiger oder Profi, unsere Kurse bieten dir Potential zum
           Wachstum.
         </p>
