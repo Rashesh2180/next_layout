@@ -4,8 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" pt-4  bg-primary  rounded-2xl ">
-      <div className=" max-w-[1696px] mx-auto">
+    <footer className=" mt-4  bg-primary  rounded-2xl footer ">
       <div className=" max-w-[1626px] px-4  py-10 mx-auto ">
         <div className=" flex justify-between gap-10  flex-wrap">
           <Image
@@ -15,11 +14,13 @@ const Footer = () => {
             className=" max-h-[152px] w-11"
           />
 
-          <div className=" flex gap-8 flex-wrap ">
-            <ul className=" flex flex-col gap-3">
-              <p className=" text-sm text-[#F3F3F5]  font-black leading-5">
+          <div className=" flex gap-8 flex-wrap max-w-2xl ml-auto justify-between w-full ">
+            <ul className=" flex flex-col gap-3 grow max-w-48">
+              <div>
+              <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70   font-black leading-5">
                 Unternehmen
-              </p>
+              </h3>
+              </div>
               {["Impressum", "Datenschutz", "AGB"].map((ele, ind) => (
                 <li
                   key={ind}
@@ -29,10 +30,12 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <ul className=" flex flex-col gap-3">
-              <p className=" text-sm text-[#F3F3F5]  font-black leading-5">
+            <ul className=" flex flex-col gap-3 grow max-w-48">
+             <div>
+             <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70   font-black leading-5">
                 Über Uns
-              </p>
+              </h3>
+             </div>
               {["Leitbild", "Umweltschutz", "Credits"].map((ele, ind) => (
                 <li
                   key={ind}
@@ -42,10 +45,12 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <ul className=" flex flex-col gap-3">
-              <p className=" text-sm text-[#F3F3F5]  font-black leading-5">
+            <ul className=" flex flex-col gap-3 grow max-w-48">
+              <div>
+              <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70   font-black leading-5">
                 Allgemein
-              </p>
+              </h3>
+              </div>
               {["FAQ", "Cookie Einstellungen"].map((ele, ind) => (
                 <li
                   key={ind}
@@ -58,13 +63,12 @@ const Footer = () => {
           </div>
         </div>
         <div className=" mt-8  border-t border-[#A6B4C1] flex-wrap gap-5 text-[#E6E0E7] pt-8 flex items-center justify-between">
-            <p className=" text-xl leading-8 font-light">© Coding School Wörthersee 2024</p>
-            <p className=" text-xl leading-8 font-light">Made with <span className=" text-red-600">♥</span> in Vienna & Carinthia</p>
+            <p className=" text-xl leading-8 font-light text-justify">© Coding School Wörthersee 2024</p>
+            <p className=" text-xl leading-8 font-light text-justify">Made with <span className=" text-red-600">♥</span> in Vienna & Carinthia</p>
 
             
 
         </div>
-      </div>
       </div>
     </footer>
   );
