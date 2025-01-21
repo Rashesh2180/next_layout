@@ -16,7 +16,7 @@ const Footer = () => {
 
           <div className=" flex gap-8 flex-wrap max-w-2xl ml-auto justify-between w-full ">
             <div className="grow max-w-48">
-              <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70   font-black leading-5">
+              <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70 mb-3   font-black leading-5">
                 Unternehmen
               </h3>
               <ul className=" flex flex-col gap-3 ">
@@ -31,7 +31,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="grow max-w-48">
-                <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70   font-black leading-5">
+                <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70  mb-3  font-black leading-5">
                   Über Uns
                 </h3>
                 <ul className=" flex flex-col gap-3 ">
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
               </div>
               <div className="grow max-w-48" >
-                <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70   font-black leading-5">
+                <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70  mb-3  font-black leading-5">
                   Allgemein
                 </h3>
                 <ul className=" flex flex-col gap-3 ">
