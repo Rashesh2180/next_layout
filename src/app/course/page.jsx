@@ -108,8 +108,9 @@ const courseData = [
 ];
 function Course() {
   return (
-    <div className=" max-w-[1632px] mx-auto">
+    <div className=" w-full mx-auto">
       <CourseBanner/>
+      <div className=" max-w-[1632px] mx-auto pb-8 py-4">
       {
         courseData.length > 0 ? (
          <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  md:grid-rows-3">
@@ -157,6 +158,7 @@ function Course() {
          </div>
         ) : <p className=" text-center text-red-600 font-semibold py-5 px-4">No data found</p>
       }
+      </div>
 
 
     </div>

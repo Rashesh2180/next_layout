@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" mt-4  bg-primary  rounded-2xl footer ">
+    <footer className=" mt-9  bg-primary  rounded-2xl footer ">
       <div className=" max-w-[1626px] px-4  py-10 mx-auto ">
         <div className=" flex justify-between gap-10  flex-wrap">
           <Image
@@ -14,8 +14,8 @@ const Footer = () => {
             className=" max-h-[152px] w-11"
           />
 
-          <div className=" flex gap-8 flex-wrap max-w-2xl ml-auto justify-between w-full ">
-            <div className="grow max-w-48">
+          <div className=" flex gap-8 flex-wrap max-w-[44rem] ml-auto w-full ">
+            <div className="grow max-w-[12.5rem]">
               <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70 mb-3   font-black leading-5">
                 Unternehmen
               </h3>
@@ -30,7 +30,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="grow max-w-48">
+            <div className="grow max-w-[12.5rem]">
                 <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70  mb-3  font-black leading-5">
                   Über Uns
                 </h3>
@@ -46,7 +46,7 @@ const Footer = () => {
               ))}
             </ul>
               </div>
-              <div className="grow max-w-48" >
+              <div className="grow max-w-[12.5rem]" >
                 <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70  mb-3  font-black leading-5">
                   Allgemein
                 </h3>
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=" mt-8  border-t border-[#A6B4C1] flex-wrap gap-5 text-[#E6E0E7] pt-8 flex items-center justify-between">
-          <p className=" text-xl leading-8 font-light text-justify">
+          <p className=" text-xl leading-8 font-light text-justify tracking-[1.5px]">
             © Coding School Wörthersee 2024
           </p>
           <p className=" text-xl leading-8 font-light text-justify">

@@ -3,16 +3,16 @@ import React from "react";
 
 const CourseBanner = () => {
   return (
-    <div className="course-banner pb-6 flex flex-col  justify-end items-center max-sm:pt-28">
-      <div className=" max-w-[52.25rem] px-4 mx-auto">
-        <h3 className=" text-5xl leading-[72px]  font-semibold text-center text-[#FEFEFF]">
+    <div className="course-banner pb-6 flex flex-col mb-11  justify-end items-center max-sm:pt-28">
+      <div className=" max-w-[52.25rem] px-4 mx-auto w-full">
+        <h3 className=" text-5xl leading-[72px] tracking-[1px]  font-semibold text-center text-[#FEFEFF]">
           Kurs Übersicht
         </h3>
-        <p className="card_title text-center text-[#FEFEFF] mb-9">
+        <p className="card_title text-center text-[#FEFEFF] mb-9 max-w-[40rem] mx-auto">
           Egal ob Einsteiger oder Profi, unsere Kurse bieten dir Potential zum
           Wachstum.
         </p>
-        <div className=" py-4">
+        <div className=" py-4 w-full">
           <div className=" bg-[#3A3A4466] rounded-2xl px-8 py-[22.5px] border border-[#3A3A44] flex gap-5 max-sm:flex-col">
             <button className=" bg-white rounded-full px-6 py-2.5 flex items-center w-full justify-between ">
               <Image
