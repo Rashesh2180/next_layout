@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/button/Button";
+import CourseBanner from "@/components/banner/CourseBanner";
 const courseData = [
   {
     id: 1,
@@ -107,7 +108,8 @@ const courseData = [
 ];
 function Course() {
   return (
-    <div className=" py-4 mt-8 max-w-[1632px] mx-auto">
+    <div className=" max-w-[1632px] mx-auto">
+      <CourseBanner/>
       {
         courseData.length > 0 ? (
          <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  md:grid-rows-3">

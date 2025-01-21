@@ -65,3 +65,9 @@ body {
 .footer{
   font-family: "Lato", serif !important;
 }
+.course-banner{
+  background-image: url("/assets/images/mainbg/main-bg.png");
+  background-size: 100% 100% ;
+  
+  @apply sm:h-[546px] h-full
+}

@@ -65,7 +65,7 @@ const Header = () => {
       className={`${
         isSticky
           ? "bg-white  sticky top-0 rounded-full w-full  !text-black"
-          : "bg-transparent text-white top-5 absolute sm:top-14 left-1/2 transform -translate-x-1/2"
+          : "bg-transparent text-white top-5 absolute sm:top-7 left-1/2 transform -translate-x-1/2"
       } z-10 max-w-[1514px] mx-auto w-full px-8 py-4   flex justify-between items-center transition-all duration-300`}
     >
       <Link href="#">
