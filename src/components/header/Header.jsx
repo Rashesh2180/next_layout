@@ -10,6 +10,8 @@ const navlist = [
   { list_name: "Coding Academy", href: "/" },
   { list_name: "Kurse", href: "/" },
   { list_name: "AATC", href: "/" },
+  { list_name: "course", href: "/course" },
+
 ];
 
 const Header = () => {
@@ -66,7 +68,7 @@ const Header = () => {
           : "bg-transparent text-white top-5 absolute sm:top-14 left-1/2 transform -translate-x-1/2"
       } z-10 max-w-[1514px] mx-auto w-full px-8 py-4   flex justify-between items-center transition-all duration-300`}
     >
-      <div>
+      <Link href="#">
         <Image
           src={
             !isSticky
@@ -78,7 +80,7 @@ const Header = () => {
           alt="header_logo"
           className="w-8 h-5"
         />
-      </div>
+      </Link>
       <ul className="lg:flex hidden gap-5 items-center ">
         {navlist.map((ele, ind) => (
           <li key={ind} className={`${isSticky ? "text-black" : "text-white"}`}>

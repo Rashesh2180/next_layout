@@ -49,7 +49,7 @@ const Course = () => {
             courseData.map((ele) => (
               <div
                 key={ele.id}
-                className=" max-w-[50.31rem] w-full bg-white opacity-60 hover:opacity-90 px-6 py-8 rounded-2xl border border-[#19315D1A]"
+                className=" max-w-[50.31rem] w-full bg-white  px-6 py-8 rounded-2xl border border-[#19315D1A]"
               >
                 <div className=" flex justify-between mb-4  flex-wrap gap-5 items-center">
                   <div className=" flex gap-3">
