@@ -13,7 +13,7 @@ const Detailbanner = () => {
           <span className=" px-6 py-3 max-w-[25rem] relative w-full block border-[#FEFEFF33] border font-normal text-center rounded-full text-sm sm:text-lg leading-7 text-regulartxt  bg-transparent/20">
             FH Kooperation | Digi Skills Scheck 2024
           </span>
-          <button className=" mt-8 rounded-full py-3 px-6 border-regulartxt text-regulartxt border flex items-center gap-2.5">
+          <button className=" max-sm:mx-auto mt-8 rounded-full py-3 px-6 border-regulartxt text-regulartxt border flex items-center gap-2.5">
             Jetzt bewerben
             <GoArrowUpRight />
           </button>
