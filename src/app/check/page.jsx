@@ -91,7 +91,7 @@ const page = () => {
             )}
           </div>
           <div className=" p-5  sc1350:p-16 bg-secodaryS1  flex-1  rounded-2xl">
-            <p className=" text-xl leading-8 font-semibold  text-white mb-4 text-justify">
+            <p className=" text-xl leading-8 font-semibold  capitalize text-white mb-4 text-justify">
               Ähnliche Kurse
             </p>
             <div className=" flex flex-col gap-4">
