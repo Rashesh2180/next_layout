@@ -25,10 +25,10 @@ const page = () => {
     <section>
       <Detailbanner />
 
-      <div className=" py-10 max-w-[97rem] px-4 flex gap-8 items-start mx-auto max-lg:flex-col">
-        <div className=" lg:max-w-md lg:flex-col  max-md:flex-col  max-lg:w-full flex gap-4 ">
-          <div className=" p-5 sm:p-8 xl:p-14 w-full bg-gradient-to-b flex-1  from-[#333455] to-[#7072BB] rounded-2xl">
-            <div className="max-w-xs max-h-80 mb-2.5  mx-auto">
+      <div className=" py-10 mb-3 max-w-[97rem] px-4 flex gap-8 items-start mx-auto max-lg:flex-col">
+        <div className=" lg:max-w-[27.62rem] flex-1 lg:flex-col  max-md:flex-col  max-lg:w-full flex gap-4 ">
+          <div className=" p-5  sc1350:p-16 w-full bg-gradient-to-b flex-1  from-secodary to-secodaryS2 rounded-2xl">
+            <div className="max-w-xs max-h-80 mb-8  mx-auto">
               <Image
                 src={"/assets/images/accordion/accordion_card.png"}
                 alt="card_img"
@@ -39,26 +39,61 @@ const page = () => {
             </div>
             {courseData.length > 0 ? (
               <ul className=" text-white ">
-                {courseData.map((ele) => (
-                  <li key={ele.id} className=" mb-3">
+                <li  className=" mb-3">
+                  <h5 className=" font-bold text-xl leading-8 uppercase">
+                    level
+                  </h5>
+
+                  <p className=" text-xl leading-8 font-normal">
+                    Anfänger & Fortgeschrittene
+                  </p>
+                </li>
+                <li  className=" mb-3">
+                  <h5 className=" font-bold text-xl leading-8 uppercase">
+                  Zeitraum
+                  </h5>
+
+                  <p className=" text-xl leading-8 font-normal">
+                  01.06.2024 - 31.12.2024
+
+                  </p>
+                </li>
+                <li  className=" mb-3">
+                  <h5 className=" font-bold text-xl leading-8 uppercase">
+                  Umfang
+                  </h5>
+
+                  <p className=" text-xl leading-8 font-normal">
+                  50 Stunden / Individuell
+                  </p>
+                </li>
+                <li  className=" mb-3">
                     <h5 className=" font-bold text-xl leading-8 uppercase">
-                      level
+                    Veranstaltungsort
                     </h5>
 
                     <p className=" text-xl leading-8 font-normal">
-                      {ele.level}
+                    Online
                     </p>
                   </li>
-                ))}
+                  <li  className="">
+                    <h5 className=" font-bold text-xl leading-8 uppercase">
+                    Preis
+                    </h5>
+
+                    <p className=" text-xl leading-8 font-normal">
+                    €8.125,- inkl. Ust. 
+                    </p>
+                  </li>
               </ul>
             ) : (
               <p className=" text-center text-red-600 py-3">No data found</p>
             )}
           </div>
-          <div className=" p-5 sm:p-8 xl:p-14 bg-secodaryS1  flex-1  rounded-2xl">
-            <h1 className=" text-xl leading-8 font-semibold  text-white mb-4">
+          <div className=" p-5  sc1350:p-16 bg-secodaryS1  flex-1  rounded-2xl">
+            <p className=" text-xl leading-8 font-semibold  text-white mb-4 text-justify">
               Ähnliche Kurse
-            </h1>
+            </p>
             <div className=" flex flex-col gap-4">
               {[
                 "Web Development",
@@ -67,7 +102,7 @@ const page = () => {
               ].map((ele) => (
                 <Link
                   href="course"
-                  className=" border border-white py-3  text-white border-opacity-50 text-lg leading-7 font-normal  bg-transparent flex gap-2 items-center justify-between px-6 rounded-full"
+                  className=" border border-white py-3  text-white border-opacity-50 text-lg leading-7 font-normal  bg-transparent flex gap-2 items-center justify-between px-4 xl:px-6 rounded-full"
                 >
                   <span className=" opacity-90">{ele}</span>{" "}
                   <span>
@@ -79,8 +114,8 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className=" lg:max-w-5xl max-lg:w-full grow bg-skylight ">
-            <CourseDetailAccordion/>
+        <div className=" lg:max-w-5xl max-lg:w-full grow ">
+          <CourseDetailAccordion />
         </div>
       </div>
     </section>

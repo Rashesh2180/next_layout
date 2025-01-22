@@ -25,7 +25,7 @@ const textData = [
 const DualSection = () => {
   return (
     <div className="py-[136px]">
-      <div className="flex 2xl:gap-[70px] gap-10 justify-center  max-w-[1498px] mx-auto px-4 max-tab:flex-col items-center sm:items-start">
+      <div className="flex 2xl:gap-[4.37rem] gap-10 justify-center  max-w-[1498px] mx-auto px-4 max-tab:flex-col items-center sm:items-start">
         <div className="relative shrink-0  max-tab:mx-auto max-sm:max-w-full max-w-[624px] tab:max-w-[550px] xl:max-w-[624px] w-full 2xl:pr-7">
           {carddata.length > 0 &&
             carddata.map((ele) => (
@@ -41,13 +41,13 @@ const DualSection = () => {
                   className="h-[349px] max-w-[300px] mx-auto w-full object-cover object-left-top"
                 />
                 <div className=" p-[30px] pt-0 flex flex-col justify-center items-center">
-                  <h5 className="text-[#FFFFFF] capitalize text-[28px] leading-[38px] opacity-80">
+                  <h5 className="text-[#FFFFFF] capitalize text-[28px] leading-10 opacity-80">
                     {ele.cardTitle}
                   </h5>
-                  <p className="text-center text-white text-xl leading-8 opacity-70 mt-3 max-w-[380px]  mx-auto">
+                  <p className="text-center text-white text-xl leading-8 opacity-70 mt-3 max-w-sm  mx-auto">
                     {ele.cardDescription}
                   </p>
-                  <button className="bg-white text-[#20212D]  font-normal text-lg leading-7 py-3 px-7 mt-[10px] flex items-center gap-1 rounded-full">
+                  <button className="bg-white text-[#20212D]  font-normal text-lg leading-7 py-3 px-7 mt-2.5 flex items-center gap-1 rounded-full">
                     <span>{ele.btn_name}</span> <GoArrowUpRight />
                   </button>
                 </div>

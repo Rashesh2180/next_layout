@@ -131,12 +131,12 @@ function Course() {
                 >
                   <div className=" flex gap-3 opacity-80">
                     <span
-                      className={`leading-7 shrink-0 capitalize text-lg font-normal px-3 py-1 mb-1  text-black bg-[#E3ECF6] rounded-full border border-[#BDD1EB80]`}
+                      className={`leading-7 shrink-0 capitalize text-lg font-normal px-3 py-1 mb-1  text-black bg-[#E3ECF6] rounded-full border border-[#C4BDEB80]`}
                     >
                       {ele.status}
                     </span>
                     <span
-                      className={`leading-7 shrink-0 text-lg font-normal px-3 py-1 mb-1  text-black bg-[#E3ECF6] rounded-full border border-[#BDD1EB80]`}
+                      className={`leading-7 shrink-0 text-lg font-normal px-3 py-1 mb-1  text-black bg-[#E3ECF6] rounded-full border border-[#C4BDEB80]`}
                     >
                       {ele.tab_2}
                     </span>
@@ -154,11 +154,11 @@ function Course() {
                 <div
                   className={`${ele.desc ? "gap-4" : ""} flex flex-col flex-1`}
                 >
-                  <h3 className=" sm:text-[1.75rem] text-2xl font-medium leading-9 text-[#161616] opacity-80 ">
+                  <h3 className=" sm:text-[1.75rem] text-2xl font-medium leading-[2.4rem] text-black opacity-80 ">
                     {ele.course_name}
                   </h3>
                   <p className=" text-lg leading-7 font-normal opacity-75 mb-8">
-                    <span className=" pr-3 border-r-2 border-[#000000]">
+                    <span className=" pr-3 border-r-2 border-black">
                       {ele.start_date}-{ele.end_date}
                     </span>
                     <span className=" ml-3">{ele.students} Stunden</span>

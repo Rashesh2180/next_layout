@@ -10,17 +10,20 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary:"#20212D",
-        secodary:"#333455",
-        secodaryS1:"#7173BB",
-        lightgray:"#F4F2FB",
-        skylight:"#F3F8FD",
-        regulartxt:"#FEFEFF",
-        bordercolor:"#5757571A"
+        primary: "#20212D",
+        secodary: "#333455",
+        secodaryS1: "#7173BB",
+        secodaryS2: "#7173BB",
+        lightgray: "#F4F2FB",
+        skylight: "#F3F8FD",
+        regulartxt: "#FEFEFF",
+        bordercolor: "#5757571A",
+        accordionborder: "#DDE4ED",
       },
-      screens:{
-        tab:"1025px"
-      }
+      screens: {
+        tab: "1025px",
+        sc1350:"1350px"
+      },
     },
   },
   plugins: [],

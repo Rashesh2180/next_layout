@@ -12,8 +12,6 @@ const navlist = [
   { list_name: "AATC", href: "/" },
   { list_name: "course", href: "/course" },
   { list_name: "check", href: "/check" },
-
-
 ];
 
 const Header = () => {
@@ -30,30 +28,24 @@ const Header = () => {
     }
   };
 
-
-  useEffect(()=>{
-    if(navOpen){
-      document.body.style.overflow = "hidden"
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
-    else{
-      document.body.style.overflow = "auto"
-
-
-    }
-    return ()=>{
-      document.body.style.overflow = "auto"
-
-    }
-
-  },[navOpen])
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [navOpen]);
 
   const toggleOpen = () => {
     setNavOpen(true);
   };
 
-  const toggleClose =()=>{
-    setNavOpen(false)
-  }
+  const toggleClose = () => {
+    setNavOpen(false);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -101,24 +93,25 @@ const Header = () => {
           isSticky ? " text-black" : "text-white"
         } flex items-center `}
       >
-        <button className="h-11 w-11 flex justify-center items-center text-3xl">
-          <FiSearch />
+        <button className="h-7 w-7 flex justify-center items-center text-3xl">
+          <Image src={"/assets/svg/search/search.svg"} height={28} width={28} />
         </button>
-        <button
-          className="h-11 w-11 flex justify-center max-lg:hidden items-center text-3xl"
-        >
-          <FaBars />
+        <button className="h-11 w-11 flex justify-center max-lg:hidden items-center text-3xl">
+          <Image src={"/assets/svg/menu.svg"} height={28} width={28} />
         </button>
         <button
           onClick={toggleOpen}
           className="h-11 w-11 flex lg:hidden  justify-center items-center text-3xl"
         >
-          <FaBars />
+          <Image src={"/assets/svg/menu.svg"} height={28} width={28} />
         </button>
         {navOpen && (
           <ul className=" flex flex-col absolute left-0 h-screen justify-center   w-full bg-[rgba(0,0,0,0.9)] text-center -top-5 sm:-top-14 lg:hidden gap-5 items-center ">
-            <button onClick={toggleClose} className=" text-3xl absolute right-5 top-10 text-red-600 font-black">
-            <IoMdClose />
+            <button
+              onClick={toggleClose}
+              className=" text-3xl absolute right-5 top-10 text-red-600 font-black"
+            >
+              X
             </button>
             {navlist.map((ele, ind) => (
               <li key={ind} className="text-white">

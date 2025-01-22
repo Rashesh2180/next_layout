@@ -40,7 +40,7 @@ const Course = () => {
           <Button
               text={"Zu den Kursen"}
               bgColor="bg-transparent"
-              borderColor="border-[#261C37]"
+              borderColor="border-[#161616"
             />
         </div>
 
@@ -71,7 +71,7 @@ const Course = () => {
                   {ele.course_name}
                 </h3>
                 <p className=" text-lg leading-7 font-normal mb-5">
-                  <span className=" pr-3 border-r border-[#000000]">
+                  <span className=" pr-3 border-r border-black">
                     {ele.start_date}-{ele.end_date}
                   </span>
                   <span className=" ml-3">{ele.students} Stunden</span>

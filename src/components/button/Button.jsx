@@ -1,13 +1,23 @@
+import Image from "next/image";
 import React from "react";
-import { GoArrowUpRight } from "react-icons/go";
 
-const Button = ({ text, bgColor = "bg-white", borderColor = "border-[#1B124C1A]" }) => {
+const Button = ({
+  text,
+  bgColor = "bg-white",
+  borderColor = "#161616",
+}) => {
   return (
     <button
-      className={`py-3.5 px-7 flex rounded-[32px] gap-[10px] border shrink-0 items-center text-[#1B124C] ${bgColor} ${borderColor} hover:bg-primary hover:text-white hover:border-primary transition-all`}
+      className={`py-3.5 px-7 flex rounded-[2rem] gap-2.5 border shrink-0 items-center text-[#161616] ${bgColor} ${borderColor}  transition-all`}
     >
       <span>{text}</span>
-      <GoArrowUpRight />
+      <Image
+        src={"/assets/svg/buttonarrow.svg"}
+        width={8}
+        height={10}
+        className=""
+        alt=""
+      />
     </button>
   );
 };
