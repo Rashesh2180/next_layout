@@ -24,7 +24,7 @@ const Banner = () => {
                   <h1 className=" xl:text-[48px]  text-[40px]  xl:leading-[72px]  font-semibold">
                     {ele.banner_heading}
                   </h1>
-                  <p className="  card_title  mt-3">{ele.banner_subheading}</p>
+                  <p className=" text-[27px] font-normal leading-9  mt-3">{ele.banner_subheading}</p>
                   <p className=" mt-6 max-w-[628px] text-sm xl:text-xl  xl:leading-8 font-light">
                     {ele.desription}
                   </p>

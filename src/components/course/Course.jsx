@@ -64,10 +64,10 @@ const Course = () => {
                     src={ele.cousre_logo}
                     alt={ele.course_name}
                     height={48}
-                    width={24}
+                    width={27}
                   /></span>
                 </div>
-                <h3 className="  card_title text-[#161616]">
+                <h3 className="  text-[27px] font-normal leading-9 text-[#161616]">
                   {ele.course_name}
                 </h3>
                 <p className=" card_subtitle mb-5">

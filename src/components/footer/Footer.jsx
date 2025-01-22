@@ -4,9 +4,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" mt-9  bg-primary  rounded-2xl footer ">
+    <footer className="   bg-primary  rounded-2xl footer ">
       <div className=" max-w-[1626px] px-4  py-10 mx-auto ">
-        <div className=" flex justify-between gap-10  flex-wrap">
+        <div className=" flex justify-between gap-10  flex-wrap mb-8">
           <Image
             src={"/assets/images/footer/footer.png"}
             height={100}
@@ -14,7 +14,7 @@ const Footer = () => {
             className=" max-h-[152px] w-11"
           />
 
-          <div className=" flex gap-8 flex-wrap max-w-[44rem] ml-auto w-full ">
+          <div className=" flex gap-8 flex-wrap max-w-lg   lg:max-w-[44rem] ml-auto w-full ">
             <div className="grow max-w-[12.5rem]">
               <h3 className=" text-sm text-[#F3F3F5] uppercase opacity-70 mb-3   font-black leading-5">
                 Unternehmen
@@ -66,11 +66,11 @@ const Footer = () => {
             
           </div>
         </div>
-        <div className=" mt-8  border-t border-[#A6B4C1] flex-wrap gap-5 text-[#E6E0E7] pt-8 flex items-center justify-between">
-          <p className=" text-xl leading-8 font-light text-justify tracking-[1.5px]">
+        <div className="   border-t border-[#A6B4C1] flex-wrap gap-5 text-[#E6E0E7] pt-8 flex items-center justify-between text-xl leading-8 font-light text-justify tracking-[1.5px]">
+          <p className=" ">
             © Coding School Wörthersee 2024
           </p>
-          <p className=" text-xl leading-8 font-light text-justify">
+          <p className=" ">
             Made with <span className=" text-red-600">♥</span> in Vienna &
             Carinthia
           </p>

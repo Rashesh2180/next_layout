@@ -3,12 +3,12 @@ import React from "react";
 
 const CourseBanner = () => {
   return (
-    <div className="course-banner pb-6 flex flex-col mb-11  justify-end items-center max-sm:pt-28">
+    <div className="course-banner pb-6 flex flex-col mb-11  justify-end items-center max-sm:pt-28 sm:h-[546px] h-full">
       <div className=" max-w-[52.25rem] px-4 mx-auto w-full">
-        <h3 className=" text-5xl leading-[72px] tracking-[1px]  font-semibold text-center text-[#FEFEFF]">
+        <h3 className=" text-4xl sm:text-5xl leading-[72px] tracking-[1px]  font-semibold text-center text-[#FEFEFF]">
           Kurs Übersicht
         </h3>
-        <p className="card_title text-center text-[#FEFEFF] mb-9 max-w-[40rem] mx-auto tracking-[-0.2px]">
+        <p className="sm:text-[27px] text-xl leading-8 font-normal sm:leading-9 text-center text-[#FEFEFF] mb-7 max-w-[40rem] mx-auto tracking-[-0.2px]">
           Egal ob Einsteiger oder Profi, unsere Kurse bieten dir Potential zum
           Wachstum.
         </p>
@@ -18,9 +18,9 @@ const CourseBanner = () => {
               <Image
                 src={"/assets/svg/coursebanner/clock-svgrepo-com 1.svg"}
                 alt=""  
-                height={18}
-                width={18}
-                className=" h-5 w-5"
+                height={24}
+                width={24}
+                className=" h-6 w-6"
               />
               <span className=" text-justify leading-8 text-lg font-semibold">
                 Alle
@@ -37,9 +37,9 @@ const CourseBanner = () => {
               <Image
                 src={"/assets/svg/coursebanner/degree.svg"}
                 alt=""
-                height={18}
-                width={18}
-                className=" h-5 w-5"
+                height={24}
+                width={28}
+                className=" h-6 w-7"
               />
               <span className=" text-justify leading-8 text-lg font-semibold">
                 Alle

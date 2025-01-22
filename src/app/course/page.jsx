@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/button/Button";
 import CourseBanner from "@/components/banner/CourseBanner";
+import Link from "next/link";
 const courseData = [
   {
     id: 1,
@@ -109,60 +110,75 @@ const courseData = [
 function Course() {
   return (
     <div className=" w-full mx-auto">
-      <CourseBanner/>
-      <div className=" max-w-[1632px] mx-auto pb-8 py-4">
-      {
-        courseData.length > 0 ? (
-         <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  md:grid-rows-3">
-          {courseData.map(ele=>(
-              <div
-              key={ele.id}
-              className={`${ele.desc  ? " md:col-span-2 md:row-span-2" : "lg:max-w-sm w-full "} px-6 py-8 rounded-2xl border border-[#19315D1A] !bg-[${ele.bg_color}] opacity-80`}
-            >
-              <div className={`flex justify-between   flex-wrap gap-5 items-center ${ele.desc ? " mb-20" : "mb-9"}`}>
-                <div className=" flex gap-3">
-                  <span className={`leading-7 shrink-0 text-lg font-normal px-3 py-1 mb-1  text-black bg-[${ele.bg_color}] rounded-full border border-[#BDD1EB80]`}>
-                    {ele.status}
-                  </span>
-                  <span className={`leading-7 shrink-0 text-lg font-normal px-3 py-1 mb-1  text-black bg-[${ele.bg_color}] rounded-full border border-[#BDD1EB80]`}>
-                    {ele.tab_2}
+      <CourseBanner />
+      <div className=" max-w-[1632px] mx-auto pb-8 py-4 mb-9">
+        {courseData.length > 0 ? (
+          <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  md:grid-rows-3">
+            {courseData.map((ele) => (
+              <Link
+                href=""
+                key={ele.id}
+                className={`${
+                  ele.desc ? " md:col-span-2 md:row-span-2" : " w-full "
+                } sm:px-6  p-5 sm:py-8 rounded-2xl border border-[#19315D1A] !bg-[${
+                  ele.bg_color
+                }] opacity-90 flex flex-col`}
+              >
+                <div
+                  className={`flex justify-between   flex-wrap gap-5  items-center ${
+                    ele.desc ? " mb-20" : "sm:mb-9 mb-5"
+                  }`}
+                >
+                  <div className=" flex gap-3 opacity-80">
+                    <span
+                      className={`leading-7 shrink-0 capitalize text-lg font-normal px-3 py-1 mb-1  text-black bg-[#E3ECF6] rounded-full border border-[#BDD1EB80]`}
+                    >
+                      {ele.status}
+                    </span>
+                    <span
+                      className={`leading-7 shrink-0 text-lg font-normal px-3 py-1 mb-1  text-black bg-[#E3ECF6] rounded-full border border-[#BDD1EB80]`}
+                    >
+                      {ele.tab_2}
+                    </span>
+                  </div>
+                  <span className=" w-7 h-12 ml-auto">
+                    <Image
+                      src={ele.cousre_logo}
+                      alt={ele.course_name}
+                      height={48}
+                      width={28}
+                      className=""
+                    />
                   </span>
                 </div>
-                <span className=" min-h-11 ml-auto"><Image
-                  src={ele.cousre_logo}
-                  alt={ele.course_name}
-                  height={48}
-                  width={24}
-                  className=""
-                /></span>
-              </div>
-              <div className={`${ele.desc ? "gap-4" : ''} flex flex-col`}>
-              <h3 className="card_title text-[#161616] ">
-                {ele.course_name}
-              </h3>
-              <p className=" card_subtitle ">
-                <span className=" pr-3 border-r border-[#000000]">
-                  {ele.start_date}-{ele.end_date}
-                </span>
-                <span className=" ml-3">{ele.students} Stunden</span>
-              </p>
-              <p className=" text-lg leading-7 font-normal ">{ele.desc}</p>
-              <div className={`mt-8`}>
-              <Button text={"Zum Kurs"}/>
-              </div>
-              </div>
-              
-            </div>
-          ))}
-          
-         </div>
-        ) : <p className=" text-center text-red-600 font-semibold py-5 px-4">No data found</p>
-      }
+                <div
+                  className={`${ele.desc ? "gap-4" : ""} flex flex-col flex-1`}
+                >
+                  <h3 className=" sm:text-[27px] text-2xl font-medium leading-9 text-[#161616] opacity-80 ">
+                    {ele.course_name}
+                  </h3>
+                  <p className=" card_subtitle opacity-75 mb-8">
+                    <span className=" pr-3 border-r-2 border-[#000000]">
+                      {ele.start_date}-{ele.end_date}
+                    </span>
+                    <span className=" ml-3">{ele.students} Stunden</span>
+                  </p>
+                  <p className=" text-lg leading-7 font-normal ">{ele.desc}</p>
+                  <div className=" mt-auto">
+                    <Button text={"Zum Kurs"} />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className=" text-center text-red-600 font-semibold py-5 px-4">
+            No data found
+          </p>
+        )}
       </div>
-
-
     </div>
-  )
+  );
 }
 
 export default Course;
