@@ -14,7 +14,9 @@ export default {
         secodary:"#333455",
         secodaryS1:"#7173BB",
         lightgray:"#F4F2FB",
-        skylight:"#F3F8FD"
+        skylight:"#F3F8FD",
+        regulartxt:"#FEFEFF",
+        bordercolor:"#5757571A"
       },
       screens:{
         tab:"1025px"

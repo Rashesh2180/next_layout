@@ -57,9 +57,7 @@ body {
   color: white;
 }
 
-.card_subtitle{
-  @apply text-lg leading-[28.8px] font-normal
-}
+
 .footer{
   font-family: "Lato", serif !important;
 }
@@ -68,3 +66,8 @@ body {
   background-size: 100% 100% ;
   
 }
+
+
+/* accordion css  */
+
+

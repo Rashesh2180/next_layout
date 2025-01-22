@@ -11,6 +11,8 @@ const navlist = [
   { list_name: "Kurse", href: "/" },
   { list_name: "AATC", href: "/" },
   { list_name: "course", href: "/course" },
+  { list_name: "check", href: "/check" },
+
 
 ];
 
@@ -66,7 +68,7 @@ const Header = () => {
         isSticky
           ? "bg-white  sticky top-0 rounded-full w-full  !text-black"
           : "bg-transparent text-white top-5 absolute sm:top-12 left-1/2 transform -translate-x-1/2"
-      } z-10 max-w-[1514px] mx-auto w-full px-8 py-4   flex justify-between items-center transition-all duration-300`}
+      } z-10 max-w-[94.62rem] mx-auto w-full px-8 py-4   flex justify-between items-center transition-all duration-300`}
     >
       <Link href="#">
         <Image
@@ -99,17 +101,17 @@ const Header = () => {
           isSticky ? " text-black" : "text-white"
         } flex items-center `}
       >
-        <button className="h-11 w-11 flex justify-center items-center text-[29px]">
+        <button className="h-11 w-11 flex justify-center items-center text-3xl">
           <FiSearch />
         </button>
         <button
-          className="h-11 w-11 flex justify-center max-lg:hidden items-center text-[29px]"
+          className="h-11 w-11 flex justify-center max-lg:hidden items-center text-3xl"
         >
           <FaBars />
         </button>
         <button
           onClick={toggleOpen}
-          className="h-11 w-11 flex lg:hidden  justify-center items-center text-[29px]"
+          className="h-11 w-11 flex lg:hidden  justify-center items-center text-3xl"
         >
           <FaBars />
         </button>

@@ -111,12 +111,12 @@ function Course() {
   return (
     <div className=" w-full mx-auto">
       <CourseBanner />
-      <div className=" max-w-[1632px] mx-auto pb-8 py-4 mb-9">
+      <div className=" max-w-[102rem] mx-auto pb-8 py-4 mb-9">
         {courseData.length > 0 ? (
           <div className=" grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  md:grid-rows-3">
             {courseData.map((ele) => (
               <Link
-                href=""
+                href={`/course/${ele.id}`}
                 key={ele.id}
                 className={`${
                   ele.desc ? " md:col-span-2 md:row-span-2" : " w-full "
@@ -154,10 +154,10 @@ function Course() {
                 <div
                   className={`${ele.desc ? "gap-4" : ""} flex flex-col flex-1`}
                 >
-                  <h3 className=" sm:text-[27px] text-2xl font-medium leading-9 text-[#161616] opacity-80 ">
+                  <h3 className=" sm:text-[1.75rem] text-2xl font-medium leading-9 text-[#161616] opacity-80 ">
                     {ele.course_name}
                   </h3>
-                  <p className=" card_subtitle opacity-75 mb-8">
+                  <p className=" text-lg leading-7 font-normal opacity-75 mb-8">
                     <span className=" pr-3 border-r-2 border-[#000000]">
                       {ele.start_date}-{ele.end_date}
                     </span>

@@ -27,13 +27,13 @@ const courseData = [
 const Course = () => {
   return (
     <section className=" mt-4 bg-[#E9E9EA80] ">
-     <div className=" max-w-[1696px] mx-auto">
-     <div className=" max-w-[1614px] py-20 pl-4 max-md:pr-4 flex justify-between gap-10 max-lg:flex-col items-start ml-auto">
+     <div className=" max-w-[106rem] mx-auto">
+     <div className=" max-w-[106rem] py-20 pl-4 max-md:pr-4 flex justify-between gap-10 max-lg:flex-col items-start ml-auto">
         <div className=" max-w-2xl">
-          <h3 className=" text-[48px] font-semibold leading-[58px] mb-3">
+          <h3 className=" text-5xl font-semibold leading-[3.6rem] mb-3">
             Alle aktuellen Kurse auf einen Blick
           </h3>
-          <p className="  text-[27px] max-w-[38rem]  leading-[38px] font-normal mb-3">
+          <p className="  text-[1.75rem] max-w-[38rem]  leading-10 font-normal mb-3">
             Egal ob Einsteiger oder Profi, unsere Kurse bieten dir Potential zum
             Wachstum.
           </p>
@@ -44,7 +44,7 @@ const Course = () => {
             />
         </div>
 
-        <div className=" flex gap-10 max-lg:mx-auto ml-auto max-w-[850px] w-full  max-sm:flex-col ">
+        <div className=" flex gap-10 max-lg:mx-auto ml-auto max-w-[53.12rem] w-full  max-sm:flex-col ">
           {courseData &&
             courseData.map((ele) => (
               <div
@@ -67,10 +67,10 @@ const Course = () => {
                     width={27}
                   /></span>
                 </div>
-                <h3 className="  text-[27px] font-normal leading-9 text-[#161616]">
+                <h3 className="  text-[1.75rem] font-normal leading-9 text-[#161616]">
                   {ele.course_name}
                 </h3>
-                <p className=" card_subtitle mb-5">
+                <p className=" text-lg leading-7 font-normal mb-5">
                   <span className=" pr-3 border-r border-[#000000]">
                     {ele.start_date}-{ele.end_date}
                   </span>
