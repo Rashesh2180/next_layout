@@ -1,10 +1,10 @@
 
 import React from "react";
 import * as Accordion from "@radix-ui/react-accordion";
+import Image from "next/image";
 
 const CourseDetailAccordion = () => (
   <div className=" flex  overflow-hidden flex-col gap-4">
-    <div className=" ">
       <Accordion.Root
         className=""
         type="single"
@@ -18,7 +18,7 @@ const CourseDetailAccordion = () => (
           <Accordion.Trigger className=" py-2.5 flex justify-between items-center w-full">
             <p className="  leading-[2.15rem] text-2xl font-medium ">Inhalt</p>
             <span className="text-violet10 bg-white h-14 w-14  border border-accordionborder rounded-full flex items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] group-data-[state=open]:rotate-180">
-              +
+              <Image src={"/assets/svg/accordionopen.svg"} height={21} width={21} alt="accordion_open"/>
             </span>
           </Accordion.Trigger>
           <Accordion.Content className=" mt-2.5">
@@ -93,7 +93,8 @@ const CourseDetailAccordion = () => (
               Zielgruppe & Vorkenntnisse
             </p>
             <span className="text-violet10 bg-white h-14 w-14  border border-accordionborder rounded-full flex items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] group-data-[state=open]:rotate-180">
-              +
+            <Image src={"/assets/svg/accordionopen.svg"} height={21} width={21} alt="accordion_open"/>
+
             </span>
           </Accordion.Trigger>
           <Accordion.Content className=" mt-2.5">
@@ -160,7 +161,6 @@ const CourseDetailAccordion = () => (
           </Accordion.Content>
         </Accordion.Item>
       </Accordion.Root>
-    </div>
   </div>
 );
 

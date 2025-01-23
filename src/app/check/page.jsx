@@ -22,12 +22,14 @@ const courseData = [
 ];
 const page = () => {
   return (
-    <section>
+    <div>
+      <section>
       <Detailbanner />
+      </section>
 
-      <div className=" py-10 mb-3 max-w-[97rem] px-4 flex gap-8 items-start mx-auto max-lg:flex-col">
+      <section className="py-10 mb-3 max-w-[97rem] px-4 flex gap-8 items-start mx-auto max-lg:flex-col">
         <div className=" lg:max-w-[27.62rem] flex-1 lg:flex-col  max-md:flex-col  max-lg:w-full flex gap-4 ">
-          <div className=" p-5  sc1350:p-16 w-full bg-gradient-to-b flex-1  from-secodary to-secodaryS2 rounded-2xl">
+          <div className=" p-5  sc1350:p-14 w-full bg-gradient-to-b flex-1  from-secodary to-secodaryS2 rounded-2xl">
             <div className="max-w-xs max-h-80 mb-8  mx-auto">
               <Image
                 src={"/assets/images/accordion/accordion_card.png"}
@@ -91,7 +93,7 @@ const page = () => {
             )}
           </div>
           <div className=" p-5  sc1350:p-16 bg-secodaryS1  flex-1  rounded-2xl">
-            <p className=" text-xl leading-8 font-semibold  capitalize text-white mb-4 text-justify">
+            <p className=" text-xl leading-8 font-semibold  uppercase text-white mb-4 text-justify">
               Ähnliche Kurse
             </p>
             <div className=" flex flex-col gap-4">
@@ -117,8 +119,8 @@ const page = () => {
         <div className=" lg:max-w-5xl max-lg:w-full grow ">
           <CourseDetailAccordion />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
