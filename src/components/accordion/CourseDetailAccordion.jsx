@@ -15,12 +15,18 @@ const CourseDetailAccordion = () => (
           value="item-1"
           className="py-6 px-5 bg-skylight border border-accordionborder rounded-2xl  sm:px-10 xl:px-14  mb-4"
         >
-          <Accordion.Trigger className=" py-2.5 flex justify-between items-center w-full">
-            <p className="  leading-[2.15rem] text-2xl font-medium ">Inhalt</p>
-            <span className="text-violet10 bg-white h-14 w-14  border border-accordionborder rounded-full flex items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] group-data-[state=open]:rotate-180">
-              <Image src={"/assets/svg/accordionopen.svg"} height={21} width={21} alt="accordion_open"/>
-            </span>
-          </Accordion.Trigger>
+        <Accordion.Trigger className="py-2.5 flex justify-between items-center w-full group" >
+  <p className="leading-[2.15rem] text-2xl font-medium">Inhalt</p>
+  
+  <span className="text-violet-10 bg-white h-14 w-14 border border-accordionborder rounded-full items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] hidden group-data-[state=closed]:flex">
+    <Image src={"/assets/svg/accordionopen.svg"} height={21} width={21} alt="accordion_open" />
+  </span>
+
+  <span className="text-violet-10 bg-white h-14 w-14 border border-accordionborder rounded-full items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] hidden group-data-[state=open]:flex">
+    <Image src={"/assets/svg/accordionclose.svg"} height={21} width={21} alt="accordion_close" />
+  </span>
+</Accordion.Trigger>
+
           <Accordion.Content className=" mt-2.5">
             <div className=" max-w-[40rem]">
               <p className=" text-xl leading-6 font-normal mb-8">
@@ -88,15 +94,17 @@ const CourseDetailAccordion = () => (
           value="item-2"
           className=" py-6 px-5 bg-skylight border border-accordionborder rounded-2xl  sm:px-10 xl:px-14 mb-4"
         >
-          <Accordion.Trigger className=" py-2.5 flex justify-between items-center w-full ">
-            <p className="  leading-[2.15rem] text-2xl font-medium ">
-              Zielgruppe & Vorkenntnisse
-            </p>
-            <span className="text-violet10 bg-white h-14 w-14  border border-accordionborder rounded-full flex items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] group-data-[state=open]:rotate-180">
-            <Image src={"/assets/svg/accordionopen.svg"} height={21} width={21} alt="accordion_open"/>
+          <Accordion.Trigger className="py-2.5 flex justify-between items-center w-full group" >
+  <p className="leading-[2.15rem] text-2xl font-medium">Zielgruppe & Vorkenntnisse</p>
+  
+  <span className="text-violet-10 bg-white h-14 w-14 border border-accordionborder rounded-full items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] hidden group-data-[state=closed]:flex">
+    <Image src={"/assets/svg/accordionopen.svg"} height={21} width={21} alt="accordion_open" />
+  </span>
 
-            </span>
-          </Accordion.Trigger>
+  <span className="text-violet-10 bg-white h-14 w-14 border border-accordionborder rounded-full items-center justify-center transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] hidden group-data-[state=open]:flex">
+    <Image src={"/assets/svg/accordionclose.svg"} height={21} width={21} alt="accordion_close" />
+  </span>
+</Accordion.Trigger>
           <Accordion.Content className=" mt-2.5">
             <div className=" max-w-[40rem]">
               <p className=" text-xl leading-6 font-normal mb-8">
